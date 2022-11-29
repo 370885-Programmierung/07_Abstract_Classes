@@ -15,15 +15,16 @@ public class App {
         output("Diff r-t " + areaDiff(rectangle, triangle));
         output("Diff r-c " + areaDiff(rectangle, circle));
     }
+    // Überladung
+        // private static double areaDiff(Rectangle r, Triangle t) {
+        //     return r.area()-t.area();
+        // }
 
-    // private static double areaDiff(Rectangle r, Triangle t) {
-    //     return r.area()-t.area();
-    // }
+        // private static double areaDiff(Rectangle r, Circle c) {
+        //     return r.area()-c.area();
+        // }
 
-    // private static double areaDiff(Rectangle r, Circle c) {
-    //     return r.area()-c.area();
-    // }
-
+   //polymorphe Lösung
     private static double areaDiff(Shape s1, Shape s2){
         return s1.area()-s2.area();
     }
